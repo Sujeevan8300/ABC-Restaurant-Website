@@ -1,0 +1,96 @@
+/* Footer Styles */
+.footer_area {
+    background-color: #222; /* Dark background for footer */
+    color: #fff; /* White text color */
+    padding: 50px 0;
+}
+
+.footer_row {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: space-between;
+}
+
+.footer_col {
+    margin-bottom: 30px; /* Adds space between columns */
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo-img {
+    width: 150px;
+    height: auto;
+}
+
+.footer_col h5 {
+    color: #fff; /* White text for section headings */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer_col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer_col ul li {
+    margin-bottom: 10px;
+}
+
+.footer_col ul li a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+}
+
+.footer_col ul li a:hover {
+    color: #ff6347; /* Change link color on hover */
+}
+
+.social-media-icons ul {
+    padding-left: 0;
+}
+
+.social-media-icons ul li {
+    display: inline;
+    margin-right: 15px; /* Space between icons */
+}
+
+.social-media-icons ul li a {
+    color: #fff; /* White color for social media icons */
+    font-size: 18px; /* Size of social media icons */
+}
+
+.social-media-icons ul li a:hover {
+    color: #ff6347; /* Change icon color on hover */
+}
+
+.text-muted {
+    color: #999; /* Light grey text for copyright */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer_row {
+        flex-direction: column; /* Stack columns vertically on small screens */
+    }
+
+    .footer_col {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .social-media-icons ul {
+        text-align: center;
+    }
+
+    .social-media-icons ul li {
+        display: inline-block;
+    }
+}

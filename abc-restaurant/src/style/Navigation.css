@@ -1,0 +1,122 @@
+/* Customize the navbar */
+.navbar-custom {
+    background: linear-gradient(135deg, #ff7f50, #ff6347); /* Warm gradient background for a vibrant restaurant feel */
+    padding: 15px 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+    border-bottom: none;
+}
+
+/* Customize the logo */
+.navbar-logo img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff; /* White logo to contrast with gradient background */
+}
+
+/* Customize the navigation links */
+.navbar-nav .nav-link {
+    margin-right: 20px;
+    font-size: 1.1rem;
+    color: #ffffff; /* White link color */
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    padding: 5px 0;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #000000; /* Gold color on hover and active */
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #000000; /* Gold underline effect */
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+/* Profile and Logout Buttons */
+.btn-outline-primary,
+.btn-outline-danger,
+.btn-outline-success {
+    border: 1px solid;
+    color: #ff6347;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff; /* White background color */
+}
+
+.btn-outline-primary {
+    border-color: #ffffff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #ff6347; /* Red background on hover */
+    color: #ffffff; /* White text on hover */
+    border-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add depth */
+}
+
+.btn-outline-danger {
+    border-color: #ffffff;
+}
+
+.btn-outline-danger:hover {
+    background-color: #ff6347; /* Red background on hover */
+    color: #ffffff; /* White text on hover */
+    border-color: #ff6347;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add depth */
+}
+
+.btn-outline-success {
+    border-color: #ffffff;
+}
+
+.btn-outline-success:hover {
+    background-color: #ff6347; /* Green background on hover */
+    color: #ffffff; /* White text on hover */
+    border-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add depth */
+}
+
+.btn-outline-primary.me-2 {
+    margin-right: 15px;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link, 
+    .order-online-button {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .navbar-nav .btn-outline-primary, 
+    .navbar-nav .btn-outline-danger, 
+    .navbar-nav .btn-outline-success {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

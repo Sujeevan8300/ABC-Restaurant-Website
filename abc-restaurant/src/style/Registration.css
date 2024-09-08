@@ -1,0 +1,66 @@
+/* Registration Page Styles */
+.registration-background {
+    background-image: url('../images/registration-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .registration-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem; /* Increased padding for better spacing */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Adjust width as necessary */
+    max-width: 800px; /* Max width for large screens */
+  }
+  
+  .registration-form {
+    width: 100%;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .register-button {
+    width: 100%;
+    background-color: #dc3545;
+    border: none;
+    margin-top: 1rem;
+  }
+
+  .terms{
+    margin-top: 1rem;
+  }
+  
+  .register-button:hover {
+    background-color: #c82333;
+  }
+  
+  .login-button {
+    text-decoration: underline;
+    color: #dc3545;
+    font-weight: 700;
+  }
+  
+  .login-button:hover {
+    color: #c82333;
+  }
+  
+  @media (max-width: 768px) {
+    .registration-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .form-row {
+      flex-direction: column; /* Stack columns on smaller screens */
+    }
+  }
+  
