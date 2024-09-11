@@ -1,0 +1,143 @@
+.special-offer-container {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .offer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .offer-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+  }
+  
+  .offer-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .offer-item .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+  }
+  
+  .offer-image {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .offer-item .card-text {
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .offer-item .btn-warning {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+    color: #fff;
+  }
+  
+  .offer-item .btn-warning:hover {
+    background-color: #ec971f;
+    border-color: #ec971f;
+  }
+  
+  .offer-item .btn-danger {
+    background-color: #d9534f;
+    border-color: #d9534f;
+    color: #fff;
+  }
+  
+  .offer-item .btn-danger:hover {
+    background-color: #c9302c;
+    border-color: #c12e2a;
+  }
+  
+  /* Modal Form Styling */
+  .special-offer-form {
+    padding: 1.5rem;
+  }
+  
+  .special-offer-form .form-label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .special-offer-form .form-control {
+    border-radius: 8px;
+  }
+  
+  .special-offer-form .form-check-label {
+    font-size: 0.9rem;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for Modal Header and Body */
+  .modal-header {
+    background-color: #007bff;
+    color: white;
+    border-bottom: none;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+  }
+  
+  .modal-body {
+    background-color: #f8f9fa;
+  }
+  
+  .modal-footer {
+    border-top: none;
+  }
+  
+  /* Custom Styling for the Form Row (Start Date and End Date) */
+  .date-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .date-col {
+    flex: 1;
+    padding-right: 0.5rem;
+  }
+  
+  .date-col:last-child {
+    padding-right: 0; /* Remove padding from the last column */
+  }
+  
+  /* General Heading and Spacing Styles */
+  h1 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .date-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }

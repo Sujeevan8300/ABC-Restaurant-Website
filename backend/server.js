@@ -1,12 +1,19 @@
 const express = require("express");
 const cors = require("cors");
 const cookieParser = require('cookie-parser');
+const bodyParser = require("body-parser");
 const app = express();
 const userRoutes = require("./routes/userRoutes");
-require('dotenv').config(); // For environment variables
+const menuCategoryRoutes = require("./routes/menuCategoryRoutes");
+const menuItemRoutes = require("./routes/menuItemRoutes");
+const serviceRoutes = require("./routes/serviceRoutes");
+const specialOfferRoutes = require("./routes/specialOfferRoutes");
+
+require('dotenv').config();
 
 // Middleware setup
-app.use(express.json()); // Built-in JSON parser, bodyParser.json() is redundant
+app.use(express.json({ limit: '10mb' })); // Increase limit to handle large image uploads
+app.use(express.urlencoded({ limit: '10mb', extended: true })); // For URL-encoded data
 app.use(cookieParser()); // Cookie parser
 app.use(cors({
     origin: process.env.CORS_ORIGIN || 'http://localhost:3000', // React app origin
@@ -15,6 +22,11 @@ app.use(cors({
 
 // Routes
 app.use("/user", userRoutes);
+app.use("/menu-categories", menuCategoryRoutes);
+app.use("/menu-items", menuItemRoutes);
+app.use("/services", serviceRoutes);
+app.use("/special-offers", specialOfferRoutes);
+
 
 // Define a route for the root URL
 app.get('/', (req, res) => {

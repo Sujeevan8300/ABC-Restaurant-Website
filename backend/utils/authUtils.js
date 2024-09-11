@@ -1,6 +1,7 @@
 // utils/authUtils.js
 const jwt = require('jsonwebtoken');
 
+// Token authentication middleware
 const authenticateToken = (req, res, next) => {
     const token = req.header('Authorization')?.split(' ')[1];
 
@@ -18,4 +19,12 @@ const authenticateToken = (req, res, next) => {
     });
 };
 
-module.exports = { authenticateToken };
+// Role check middleware to verify if the user is an admin
+const checkAdmin = (req, res, next) => {
+    if (req.user.role !== 'admin') {
+        return res.status(403).json({ msg: 'Access denied. Admins only.' });
+    }
+    next();
+};
+
+module.exports = { authenticateToken, checkAdmin };

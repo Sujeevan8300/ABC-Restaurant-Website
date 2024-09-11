@@ -9,7 +9,12 @@ import Footer from './components/Footer';
 import Registration from './components/Registration';
 import Login from './components/Login';
 import CustomerDashboard from './components/customer/CustomerDashboard';
-
+import AdminDashboard from './components/admin/AdminDashboard';
+import MenuCategory from './components/MenuCategory';
+import Profile from './components/Profile';
+import UserManagement from './components/admin/UserManagement';
+import Service from './components/Service';
+import SpecialOffer from './components/SpecialOffer';
 
 function App() {
   return (
@@ -20,6 +25,12 @@ function App() {
           <Route path="/customer-dashboard" element={<CustomerDashboard />} />
           <Route path="/login" element={<Login />} />
           <Route path="/registration" element={<Registration />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/admin-dashboard" element={<AdminDashboard />} />
+          <Route path="/menu-categories" element={<MenuCategory />} />
+          <Route path="/services" element={<Service />} />
+          <Route path="/special-offers" element={<SpecialOffer />} />
+          <Route path="/user-management" element={<UserManagement />} />
           <Route path="/" element={<Home />} />
           <Route path="" element={<Footer />} />
         </Routes>

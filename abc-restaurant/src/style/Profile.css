@@ -1,0 +1,31 @@
+.profile-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .profile-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-details p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .profile-details button {
+    background-color: #dc3545;
+    border: none;
+  }
+  
+  .profile-details button:hover {
+    background-color: #c82333;
+  }
+  
+  .modal-body {
+    background-color: #fff;
+  }
+  
