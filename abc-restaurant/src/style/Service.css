@@ -1,0 +1,40 @@
+.services-container {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-item {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    width: 365px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #dee2e6;
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}

@@ -26,7 +26,7 @@ const Login = () => {
 
     try {
       const response = await axios.post("http://localhost:4000/user/login", loginInfo);
-
+      localStorage.setItem('authToken', response.data.token); 
       if (response.data.status === 'success') {
         // Save the token in cookies
         setCookie('token', response.data.token, { path: '/' });

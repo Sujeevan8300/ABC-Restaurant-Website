@@ -1,10 +1,11 @@
-// routes/menuCategoryRoutes.js
 const express = require('express');
 const router = express.Router();
 const MenuCategoryController = require('../controllers/menuCategoryController');
 
-router.post('/menu-categories', MenuCategoryController.create);
-router.get('/menu-categories', MenuCategoryController.getAll);
-// Other routes for update and delete
+// Define the routes
+router.post('/create-menu-categories', MenuCategoryController.createCategory);
+router.get('/get-all-menu-categories', MenuCategoryController.getAllCategories);
+router.put('/update-menu-categories/:categoryId', MenuCategoryController.updateCategory);
+router.delete('/delete-menu-categories/:categoryId', MenuCategoryController.deleteCategory);
 
 module.exports = router;

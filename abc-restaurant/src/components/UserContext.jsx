@@ -40,6 +40,7 @@ export const UserProvider = ({ children }) => {
   const handleLogout = () => {
     removeCookie('token');
     setUserRole(null);
+    
   };
 
   return (

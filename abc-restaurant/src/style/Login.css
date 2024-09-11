@@ -1,44 +1,93 @@
+/* Updated Login Styles */
 .login-container {
-    height: 100vh;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    background: linear-gradient(to right, rgb(198, 174, 128), white);
-  }
-  
-  
-  .login-form {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
-    /* overflow-y: auto;
-    max-height: 90vh; */
-    height: auto;
-  }
-  
-  .login-image img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    border-radius: 10px; 
-  }
-  
-  .social-login button {
-    width: 100%;
-    margin-top: 10px;
-  }
-  .forgot_pass{
-    display: flex;
-  justify-content: right;
-  
-  }
-  .forgot_pass a {
-    color: black;
-    text-decoration: none; /* Optional: Remove underline */
-  }
-  
-  .forgot_pass a:hover {
-    color: darkgray; /* Optional: Change color on hover */
-  }
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fff8f8, #ffeded);
+}
+
+.login-form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin-right: 1rem;
+  border: 1.5px solid #ff6347;
+}
+
+.login-form h2 {
+  color: #ff6347;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.login-form .form-control {
+  border: 2px solid #ff6347;
+  border-radius: 50px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+
+.login-form .form-control:focus {
+  border-color: #ff7f50;
+  box-shadow: none;
+}
+
+.login-form .btn {
+  background-color: #ff6347;
+  border: none;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-form .btn:hover {
+  background-color: #ff7f50;
+}
+
+.social-login button {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.social-login button:first-child {
+  background-color: #db4437;
+}
+
+.social-login button:last-child {
+  background-color: #4267B2;
+}
+
+.login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1.5px solid  #ffeded;
+}
+
+.forgot_pass a {
+  color: #ff6347;
+  text-decoration: none;
+}
+
+.forgot_pass a:hover {
+  color: #ff7f50;
+}
+
+.login-form p a {
+  color: #ff6347;
+  text-decoration: none;
+}
+
+.login-form p a:hover {
+  color: #ff7f50;
+}

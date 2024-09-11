@@ -27,9 +27,10 @@ const NavigationBar = () => {
                 <>
                   <Nav.Link onClick={() => navigate('/admin-dashboard')}>Dashboard</Nav.Link>
                   <Nav.Link onClick={() => navigate('/user-management')}>User Management</Nav.Link>
-                  <Nav.Link onClick={() => navigate('/reports')}>Reports</Nav.Link>
-                  <Nav.Link onClick={() => navigate('/queries')}>Customer Queries</Nav.Link>
-                  <Nav.Link onClick={() => navigate('/menu-category')}>Menu Category</Nav.Link>
+                  <Nav.Link onClick={() => navigate('/queries')}>Queries</Nav.Link>
+                  <Nav.Link onClick={() => navigate('/services')}>Services</Nav.Link>
+                  <Nav.Link onClick={() => navigate('/menu-categories')}>Menus</Nav.Link>
+                  <Nav.Link onClick={() => navigate('/special-offers')}>Offer</Nav.Link>
                 </>
               )}
               {userRole === 'staff' && (
